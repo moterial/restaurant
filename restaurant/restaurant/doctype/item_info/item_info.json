@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {item_name}",
+ "creation": "2023-08-07 12:53:05.432279",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_name",
+  "item_unit",
+  "item_purchase_qty",
+  "yet_to_arr_qty",
+  "column_break_ftziu",
+  "item_type",
+  "item_unit_price",
+  "item_stock_threshold",
+  "section_break_jbymu",
+  "sourcing_agent",
+  "section_break_pw0xn",
+  "item_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u8ca8\u54c1\u540d\u7a31",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u7a2e\u985e",
+   "options": "\u5eda\u623f\n\u6a13\u9762\n\u6c34\u5427",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_unit",
+   "fieldtype": "Data",
+   "label": "\u55ae\u4f4d"
+  },
+  {
+   "fieldname": "item_unit_price",
+   "fieldtype": "Data",
+   "label": "\u55ae\u50f9",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ftziu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_stock_threshold",
+   "fieldtype": "Data",
+   "label": "\u5eab\u5b58\u95be\u503c",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_jbymu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sourcing_agent",
+   "fieldtype": "Table",
+   "label": "\u63a1\u8cfc\u5546",
+   "options": "Sourcing Agent",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_pw0xn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_details",
+   "fieldtype": "Long Text",
+   "label": "\u8ca8\u54c1\u8cc7\u6599"
+  },
+  {
+   "fieldname": "item_purchase_qty",
+   "fieldtype": "Int",
+   "label": "\u6bcf\u6b21\u63a1\u8cfc\u91cf",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval: doc.yet_to_arr_qty > -1;",
+   "fieldname": "yet_to_arr_qty",
+   "fieldtype": "Int",
+   "label": "\u672a\u9001\u9054"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-25 17:19:06.673862",
+ "modified_by": "Administrator",
+ "module": "Restaurant",
+ "name": "Item Info",
+ "name_case": "Title Case",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staff",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

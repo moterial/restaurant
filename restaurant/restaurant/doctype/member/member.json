@@ -1,0 +1,223 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CUS-{member_id}",
+ "creation": "2023-08-07 12:12:54.103728",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "\u6703\u54e1\u8cc7\u6599_tab",
+  "full_name",
+  "column_break_6vsqq",
+  "member_id",
+  "column_break_kgsxj",
+  "last_name",
+  "first_name",
+  "column_break_bgh9v",
+  "phone_number",
+  "email",
+  "column_break_yvuy3",
+  "birthday",
+  "discount_section",
+  "all_discount",
+  "discount_select_field",
+  "discount_details",
+  "section_break_y1dpy",
+  "customer_description",
+  "\u6703\u54e1\u7a4d\u5206_tab",
+  "calculation_rule",
+  "column_break_wtqfp",
+  "points",
+  "section_break_2qnvq",
+  "calculator",
+  "calculation_history"
+ ],
+ "fields": [
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u59d3\u6c0f",
+   "reqd": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u540d\u5b57",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval: (doc.first_name && doc.last_name)",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "\u4e2d\u6587\u5168\u540d",
+   "read_only": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u96fb\u90f5\u5730\u5740",
+   "reqd": 1
+  },
+  {
+   "default": "+852-",
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "\u96fb\u8a71\u865f\u78bc",
+   "reqd": 1
+  },
+  {
+   "fieldname": "birthday",
+   "fieldtype": "Date",
+   "label": "\u51fa\u751f\u65e5\u671f"
+  },
+  {
+   "depends_on": "//eval: doc.phone_number",
+   "fieldname": "member_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u6703\u54e1\u7de8\u865f",
+   "read_only": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_bgh9v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kgsxj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_6vsqq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "discount_section",
+   "fieldtype": "Section Break",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "all_discount",
+   "fieldtype": "Link",
+   "label": "All Discount",
+   "options": "discount type template"
+  },
+  {
+   "fieldname": "customer_description",
+   "fieldtype": "Long Text",
+   "label": "Customer Description"
+  },
+  {
+   "fieldname": "section_break_y1dpy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_yvuy3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.points > -1;",
+   "fieldname": "points",
+   "fieldtype": "Int",
+   "label": "\u73fe\u6709\u7a4d\u5206",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "discount_details",
+   "fieldtype": "Table",
+   "label": "discount details",
+   "options": "discount details table"
+  },
+  {
+   "fieldname": "\u6703\u54e1\u8cc7\u6599_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u6703\u54e1\u8cc7\u6599"
+  },
+  {
+   "fieldname": "\u6703\u54e1\u7a4d\u5206_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u6703\u54e1\u7a4d\u5206"
+  },
+  {
+   "fieldname": "calculator",
+   "fieldtype": "Table",
+   "label": "\u7a4d\u5206\u8a08\u7b97",
+   "options": "Points Calculator"
+  },
+  {
+   "fieldname": "calculation_history",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "\u7a4d\u5206\u7d00\u9304",
+   "options": "Points Calculator"
+  },
+  {
+   "default": "Default",
+   "fieldname": "calculation_rule",
+   "fieldtype": "Link",
+   "label": "\u8a08\u7b97\u65b9\u6cd5",
+   "options": "Points Calculation Rules"
+  },
+  {
+   "fieldname": "section_break_2qnvq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_wtqfp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "discount_select_field",
+   "fieldtype": "Table MultiSelect",
+   "label": "Discount select field",
+   "options": "Discount Multi-select Link"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-25 16:05:36.936153",
+ "modified_by": "Administrator",
+ "module": "Restaurant",
+ "name": "Member",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staff",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "full_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

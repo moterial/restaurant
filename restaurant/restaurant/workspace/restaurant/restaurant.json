@@ -1,0 +1,168 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"vmtihzZ9Ow\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Restaurant</span>\",\"col\":12}},{\"id\":\"j_XiGZC7gU\",\"type\":\"card\",\"data\":{\"card_name\":\"\u6703\u54e1\",\"col\":3}},{\"id\":\"rwAOzff7LT\",\"type\":\"card\",\"data\":{\"card_name\":\"\u8077\u54e1\",\"col\":3}},{\"id\":\"jOUAevnRmD\",\"type\":\"card\",\"data\":{\"card_name\":\"\u7269\u6599\u5eab\u5b58\u7ba1\u7406\u7cfb\u7d71\",\"col\":3}},{\"id\":\"Ku7_GuPPoZ\",\"type\":\"card\",\"data\":{\"card_name\":\"\u63a1\u8cfc\u7ba1\u7406\u7cfb\u7d71\",\"col\":3}},{\"id\":\"QN11R1CKZR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u65b0\u6703\u54e1\",\"col\":3}},{\"id\":\"wor8Su-dUk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u65b0\u8077\u54e1\",\"col\":3}},{\"id\":\"50ciG6Hu4o\",\"type\":\"card\",\"data\":{\"card_name\":\"\u512a\u60e0\",\"col\":3}}]",
+ "creation": "2023-08-15 12:55:42.099425",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-monthly-rank",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Restaurant",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u512a\u60e0",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u512a\u60e0\u8868",
+   "link_count": 0,
+   "link_to": "discount type template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u7269\u6599\u5eab\u5b58\u7ba1\u7406\u7cfb\u7d71",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u7269\u6599\u8cc7\u6599\u8a2d\u5b9a",
+   "link_count": 0,
+   "link_to": "Item Info",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u5eab\u5b58\u7ba1\u7406-\u5eda\u623f",
+   "link_count": 0,
+   "link_to": "Stock Management - Kitchen",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u8077\u54e1",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u8077\u54e1\u5217\u8868",
+   "link_count": 0,
+   "link_to": "Staff Account",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u63a1\u8cfc\u7ba1\u7406\u7cfb\u7d71",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u4f9b\u61c9\u5546\u8cc7\u8a0a\u8a2d\u5b9a",
+   "link_count": 0,
+   "link_to": "Sourcing Agent Info",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u63a1\u8cfc\u55ae",
+   "link_count": 0,
+   "link_to": "Purchase Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u6703\u54e1",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u6703\u54e1\u5217\u8868",
+   "link_count": 0,
+   "link_to": "Member",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u7a4d\u5206\u8a08\u7b97\u65b9\u6cd5",
+   "link_count": 0,
+   "link_to": "Points Calculation Rules",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-08-23 16:37:20.208301",
+ "modified_by": "Administrator",
+ "module": "Restaurant",
+ "name": "Restaurant",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "\u65b0\u8077\u54e1",
+   "link_to": "Staff Account",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "New",
+   "label": "\u65b0\u6703\u54e1",
+   "link_to": "Member",
+   "type": "DocType"
+  }
+ ],
+ "title": "Restaurant"
+}

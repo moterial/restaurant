@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-08 17:55:21.562501",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "calculated_date",
+  "option",
+  "consume",
+  "points",
+  "calculated"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "points",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "\u7a4d\u5206\u6578"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "option",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u9078\u9805",
+   "options": "\u672a\u9078\u64c7\n\u6d88\u8cbb\n\u4f7f\u7528\u7a4d\u5206",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "consume",
+   "fieldtype": "Currency",
+   "label": "\u6d88\u8cbb"
+  },
+  {
+   "default": "0",
+   "fieldname": "calculated",
+   "fieldtype": "Check",
+   "label": "\u5df2\u8a08\u7b97",
+   "read_only": 1
+  },
+  {
+   "fieldname": "calculated_date",
+   "fieldtype": "Data",
+   "label": "\u8a08\u7b97\u65e5\u671f",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-17 10:32:40.207293",
+ "modified_by": "Administrator",
+ "module": "Restaurant",
+ "name": "Points Calculator",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

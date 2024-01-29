@@ -1,0 +1,30 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-17 11:39:33.969512",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "birthday_dicount"
+ ],
+ "fields": [
+  {
+   "fieldname": "birthday_dicount",
+   "fieldtype": "Data",
+   "label": "\u751f\u65e5\u512a\u60e0"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-17 11:39:33.969512",
+ "modified_by": "Administrator",
+ "module": "Restaurant",
+ "name": "Discount Multiple Select Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{sourcing_name}",
+ "creation": "2023-08-07 15:44:33.205817",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sourcing_name",
+  "contact_mtd",
+  "sourcing_phone",
+  "sourcing_email",
+  "section_break_5iyvw",
+  "sourcing_contact",
+  "sourcing_address",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "sourcing_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u4f9b\u61c9\u5546\u540d\u7a31",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.contact_mtd==\"\u96fb\u8a71\"",
+   "fieldname": "sourcing_phone",
+   "fieldtype": "Phone",
+   "label": "\u806f\u7d61\u96fb\u8a71",
+   "mandatory_depends_on": "eval: doc.contact_mtd==\"\u96fb\u8a71\"",
+   "read_only_depends_on": "eval:doc.sourcing_email"
+  },
+  {
+   "fieldname": "sourcing_address",
+   "fieldtype": "Small Text",
+   "label": "\u5730\u5740"
+  },
+  {
+   "description": "\u806f\u7d61\u96fb\u8a71\u6216\u96fb\u90f5\u53ea\u80fd\u7b97\u586b\u5176\u4e2d\u4e00\u9805\u3002\n\u5982\u9700\u6539\u586b\uff0c\u8acb\u6e05\u9664\u539f\u672c\u5df2\u586b\u7684\u8cc7\u6599",
+   "fieldname": "contact_mtd",
+   "fieldtype": "Select",
+   "label": "\u512a\u5148\u806f\u7d61\u65b9\u5f0f",
+   "options": "\u96fb\u8a71\n\u96fb\u90f5",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.contact_mtd==\"\u96fb\u90f5\"",
+   "fieldname": "sourcing_email",
+   "fieldtype": "Data",
+   "label": "\u806f\u7d61\u96fb\u90f5",
+   "mandatory_depends_on": "eval:doc.contact_mtd==\"\u96fb\u90f5\"",
+   "read_only_depends_on": "eval:doc.sourcing_phone"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "\u5099\u8a3b"
+  },
+  {
+   "fieldname": "section_break_5iyvw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "\u6b64\u70ba\u7b2c\u4e8c\u806f\u7d61\u65b9\u5f0f\uff0c\u53ef\u586b\u5beb\u96fb\u8a71/\u96fb\u90f5",
+   "fieldname": "sourcing_contact",
+   "fieldtype": "Data",
+   "label": "\u5176\u4ed6\u806f\u7d61\u65b9\u5f0f"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-25 13:51:17.202575",
+ "modified_by": "Administrator",
+ "module": "Restaurant",
+ "name": "Sourcing Agent Info",
+ "name_case": "Title Case",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staff",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

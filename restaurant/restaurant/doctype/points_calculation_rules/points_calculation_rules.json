@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name_of_rule",
+ "creation": "2023-08-11 16:35:54.596712",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_rule",
+  "default_points",
+  "points_rule_table",
+  "maximum_consume"
+ ],
+ "fields": [
+  {
+   "fieldname": "points_rule_table",
+   "fieldtype": "Table",
+   "label": "\u8a08\u7b97\u65b9\u6cd5",
+   "options": "Points Rules Settings Table"
+  },
+  {
+   "fieldname": "default_points",
+   "fieldtype": "Int",
+   "label": "\u6703\u54e1\u8d77\u59cb\u7a4d\u5206"
+  },
+  {
+   "fieldname": "name_of_rule",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u65b9\u6cd5\u540d\u7a31",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "maximum_consume",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Maximum Consume",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-16 15:37:48.535193",
+ "modified_by": "Administrator",
+ "module": "Restaurant",
+ "name": "Points Calculation Rules",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

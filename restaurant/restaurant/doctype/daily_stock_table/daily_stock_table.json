@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-08 11:42:53.158570",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_name",
+  "column_break_xo52m",
+  "opening",
+  "column_break_axgdi",
+  "closing",
+  "column_break_llyxn",
+  "throwing",
+  "column_break_6f2pn",
+  "buy",
+  "column_break_5yv7a",
+  "purchase_arrived",
+  "column_break_qoze7",
+  "ordered",
+  "column_break_orm8e",
+  "usage",
+  "column_break_scfhw",
+  "final",
+  "column_break_vncqx",
+  "warning",
+  "column_break_mjhbv",
+  "stock_warning",
+  "column_break_m1syt",
+  "item_stock_threshold"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "\u7269\u6599",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xo52m",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "opening",
+   "fieldtype": "Data",
+   "label": "\u958b\u92ea"
+  },
+  {
+   "fieldname": "column_break_axgdi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "closing",
+   "fieldtype": "Data",
+   "label": "\u6536\u92ea "
+  },
+  {
+   "fieldname": "column_break_llyxn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "throwing",
+   "fieldtype": "Data",
+   "label": "\u62cb\u68c4"
+  },
+  {
+   "fieldname": "column_break_6f2pn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "buy",
+   "fieldtype": "Data",
+   "label": "\u5373\u65e5\u5165\u8ca8 "
+  },
+  {
+   "fieldname": "column_break_5yv7a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purchase_arrived",
+   "fieldtype": "Data",
+   "label": "\u8a02\u55ae\u5230\u8ca8 "
+  },
+  {
+   "fieldname": "column_break_qoze7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ordered",
+   "fieldtype": "Data",
+   "label": "\u5df2\u8a02\u8cfc"
+  },
+  {
+   "fieldname": "column_break_orm8e",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "usage",
+   "fieldtype": "Data",
+   "label": "\u4f7f\u7528",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_scfhw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "final",
+   "fieldtype": "Data",
+   "label": "Final Value",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vncqx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "warning",
+   "fieldtype": "Data",
+   "label": "Warning",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_mjhbv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stock_warning",
+   "fieldtype": "Select",
+   "label": "Stock Warning",
+   "options": "\n\u9700\u8981\u63a1\u8cfc\n\u5efa\u8b70\u63a1\u8cfc"
+  },
+  {
+   "fieldname": "column_break_m1syt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item_name.item_stock_threshold",
+   "fieldname": "item_stock_threshold",
+   "fieldtype": "Read Only",
+   "label": "\u95be\u503c"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-14 13:56:49.622690",
+ "modified_by": "Administrator",
+ "module": "Restaurant",
+ "name": "Daily Stock Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

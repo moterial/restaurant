@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: DI-{discount_item_name}",
+ "creation": "2023-08-09 12:29:08.947782",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "discount_item_name",
+  "discount_percentage",
+  "discount_amount",
+  "discount_gift",
+  "discount_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "discount_item_name",
+   "fieldtype": "Data",
+   "label": "Discount Item Name"
+  },
+  {
+   "fieldname": "discount_percentage",
+   "fieldtype": "Percent",
+   "label": "Discount Percentage"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "label": "Discount Amount"
+  },
+  {
+   "fieldname": "discount_gift",
+   "fieldtype": "Data",
+   "label": "Discount Gift"
+  },
+  {
+   "fieldname": "discount_status",
+   "fieldtype": "Select",
+   "label": "Discount Status",
+   "options": "\nOpen\nUpcoming\nClosed"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-09 12:33:47.807879",
+ "modified_by": "Administrator",
+ "module": "Restaurant",
+ "name": "Discount Item",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

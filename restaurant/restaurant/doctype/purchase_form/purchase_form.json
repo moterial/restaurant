@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "autoname": "naming_series: ",
+ "creation": "2023-08-15 10:36:03.971559",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "today",
+  "section_break_nijxw",
+  "date",
+  "column_break_gswiq",
+  "purchase_arr_date",
+  "section_break_bngod",
+  "table",
+  "overall_price"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "\u9023\u7d50\u5eab\u5b58\u65e5\u671f"
+  },
+  {
+   "fieldname": "table",
+   "fieldtype": "Table",
+   "options": "Purchase List Table"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1
+  },
+  {
+   "default": "Today",
+   "depends_on": "eval:doc.date",
+   "fieldname": "today",
+   "fieldtype": "Date",
+   "label": "\u8868\u683c\u5275\u5efa\u65e5\u671f",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_nijxw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "purchase_arr_date",
+   "fieldtype": "Date",
+   "label": "\u8a2d\u7f6e\u9001\u9054\u65e5\u671f"
+  },
+  {
+   "fieldname": "column_break_gswiq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_bngod",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "overall_price",
+   "fieldtype": "Currency",
+   "label": "\u7e3d\u91d1\u984d"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-22 17:34:53.561437",
+ "modified_by": "Administrator",
+ "module": "Restaurant",
+ "name": "Purchase Form",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staff",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-14 17:48:19.562469",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pull_date",
+  "column_break_0mjpt",
+  "item_name",
+  "column_break_b1te8",
+  "item_type",
+  "column_break_hx1cm",
+  "sourcing_name",
+  "column_break_tdctc",
+  "sourcing_contact",
+  "column_break_ale88",
+  "item_unit_price",
+  "column_break_jodb6",
+  "item_purchase_qty",
+  "column_break_l6nly",
+  "cancel_qty",
+  "column_break_0uiiq",
+  "total_price",
+  "column_break_cqvha",
+  "status",
+  "column_break_t7cll",
+  "yet_to_arr_qty",
+  "column_break_1hhqs",
+  "cur_delivered_qty",
+  "column_break_dqngb",
+  "total_delivered_qty",
+  "column_break_kswei",
+  "notes",
+  "column_break_sku4c",
+  "checkbox"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_b1te8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tdctc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ale88",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jodb6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_l6nly",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_0uiiq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_cqvha",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_t7cll",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_1hhqs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dqngb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kswei",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Link",
+   "label": "\u9805\u76ee",
+   "options": "Item Info"
+  },
+  {
+   "fieldname": "sourcing_name",
+   "fieldtype": "Read Only",
+   "label": "\u4f9b\u61c9\u5546",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sourcing_contact",
+   "fieldtype": "Read Only",
+   "label": "\u4f9b\u61c9\u5546\u806f\u7d61\u65b9\u5f0f",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_unit_price",
+   "fieldtype": "Read Only",
+   "label": "\u55ae\u50f9",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_purchase_qty",
+   "fieldtype": "Int",
+   "label": "\u63a1\u8cfc\u6578\u91cf"
+  },
+  {
+   "default": "0",
+   "fieldname": "cancel_qty",
+   "fieldtype": "Data",
+   "label": "\u53d6\u6d88\u6578\u91cf"
+  },
+  {
+   "depends_on": "eval: doc.total_price >= 0",
+   "fieldname": "total_price",
+   "fieldtype": "Read Only",
+   "label": "\u91d1\u984d",
+   "read_only": 1
+  },
+  {
+   "default": "\u672a\u9001\u9054",
+   "fieldname": "status",
+   "fieldtype": "Read Only",
+   "label": "\u72c0\u614b",
+   "options": "\u672a\u9001\u9054\n\u90e8\u5206\u9001\u9054\n\u5df2\u9001\u9054\n\u53d6\u6d88"
+  },
+  {
+   "depends_on": "eval: doc.yet_to_arr_qty >= 0",
+   "fieldname": "yet_to_arr_qty",
+   "fieldtype": "Read Only",
+   "label": "\u672a\u9001\u9054",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.cur_delivered_qty > -1",
+   "fieldname": "cur_delivered_qty",
+   "fieldtype": "Int",
+   "label": "\u672c\u6b21\u5df2\u9001\u9054"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.total_delivered_qty > -1",
+   "fieldname": "total_delivered_qty",
+   "fieldtype": "Data",
+   "label": "\u7e3d\u9001\u9054\u6578\u91cf"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Data",
+   "label": "\u5099\u8a3b"
+  },
+  {
+   "fetch_from": "item_name.item_type",
+   "fieldname": "item_type",
+   "fieldtype": "Read Only",
+   "label": "\u9805\u76ee\u7a2e\u985e"
+  },
+  {
+   "fieldname": "column_break_hx1cm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pull_date",
+   "fieldtype": "Read Only",
+   "label": "\u65e5\u671f"
+  },
+  {
+   "fieldname": "column_break_0mjpt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sku4c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "checkbox",
+   "fieldtype": "Check",
+   "label": "\u5df2\u8a02\u8cfc"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-22 17:29:37.889808",
+ "modified_by": "Administrator",
+ "module": "Restaurant",
+ "name": "Purchase List Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

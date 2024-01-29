@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series: ",
+ "creation": "2023-08-07 13:02:14.596311",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "discount_name",
+  "discount_type",
+  "column_break_cnfcm",
+  "period_from",
+  "column_break_cxiib",
+  "period_to",
+  "property",
+  "single_use",
+  "multiple_use",
+  "quantity",
+  "section_break_fxrwj",
+  "discount_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "discount_type",
+   "fieldtype": "Select",
+   "label": "\u512a\u60e0\u7a2e\u985e",
+   "options": "\u6708\u4efd\u512a\u60e0\n\u751f\u65e5\u512a\u60e0\n\u7279\u5225\u512a\u60e0"
+  },
+  {
+   "fieldname": "discount_details",
+   "fieldtype": "Table",
+   "label": "\u512a\u60e0\u8a73\u7d30\u8cc7\u6599",
+   "options": "discount details table"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "discount_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u512a\u60e0\u540d\u7a31"
+  },
+  {
+   "fieldname": "column_break_cnfcm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "period_from",
+   "fieldtype": "Date",
+   "label": "\u6709\u6548\u671f \u7531"
+  },
+  {
+   "fieldname": "period_to",
+   "fieldtype": "Date",
+   "label": "\u81f3"
+  },
+  {
+   "fieldname": "section_break_fxrwj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_cxiib",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "property",
+   "fieldtype": "Section Break",
+   "label": "\u5c6c\u6027"
+  },
+  {
+   "default": "0",
+   "fieldname": "single_use",
+   "fieldtype": "Check",
+   "label": "\u55ae\u6b21\u4f7f\u7528",
+   "read_only_depends_on": "eval: doc.multiple_use;"
+  },
+  {
+   "default": "0",
+   "fieldname": "multiple_use",
+   "fieldtype": "Check",
+   "label": "\u591a\u6b21\u4f7f\u7528",
+   "read_only_depends_on": "eval:doc.single_use;"
+  },
+  {
+   "default": "2",
+   "depends_on": "eval:doc.multiple_use;",
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "\u6b21\u6578"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-21 11:46:03.320499",
+ "modified_by": "Administrator",
+ "module": "Restaurant",
+ "name": "discount type template",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staff",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "discount_name"
+}
